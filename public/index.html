@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Eleições 2026 — Apuração</title>
+
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <div>
+    <h1>Eleições 2026</h1>
+    <p>Apuração com dados oficiais do Tribunal Superior Eleitoral</p>
+    <nav class="menu-cargos">
+  <a href="#presidente">Presidente</a>
+  <a href="#governador">Governador</a>
+  <a href="#senado">Senado</a>
+  <a href="#deputado">Deputado Federal</a>
+</nav>
+  </div>
+
+  <div class="topbar-status">
+    <span id="status-geral" class="status carregando">
+      ● Conectando
+    </span>
+
+    <span id="relogio"></span>
+  </div>
+</header>
+
+
+<main class="container">
+<div class="secao-regiao">
+  <span>BRASIL</span>
+</div>
+  <!-- PRESIDENTE -->
+
+  <section id="presidente" class="race-card">
+
+    <div class="race-header">
+      <div>
+        <span class="local">BRASIL</span>
+        <h2>Presidente</h2>
+      </div>
+
+      <div class="apuracao-box">
+        <span>Seções totalizadas</span>
+        <strong id="presidente-apuracao">0,00%</strong>
+      </div>
+    </div>
+
+    <div class="progress">
+      <div id="presidente-progress" class="progress-bar"></div>
+    </div>
+
+    <div id="presidente-secoes" class="secoes">
+      0 de 0 seções
+    </div>
+
+    <div
+      id="presidente-resumo"
+      class="resumo-votos">
+    </div>
+
+    <div
+      id="presidente-candidatos"
+      class="lista-candidatos">
+      Carregando...
+    </div>
+    <div class="estados-presidente">
+
+  <div class="estados-presidente-header">
+    <div>
+      <span class="local">
+        DESEMPENHO POR ESTADO
+      </span>
+
+      <h3>
+        Votação presidencial nas UFs
+      </h3>
+    </div>
+
+    <span class="estados-legenda">
+      1º e 2º mais votados
+    </span>
+  </div>
+
+  <div
+    id="presidente-estados"
+    class="tabela-estados"
+  >
+    <div class="estado-aguardando">
+      Aguardando dados das unidades da Federação...
+    </div>
+  </div>
+
+</div>
+
+    <div
+      id="presidente-atualizacao"
+      class="ultima-atualizacao">
+    </div>
+
+  </section>
+
+<div class="secao-regiao">
+  <span>MINAS GERAIS</span>
+</div>
+  <!-- GOVERNADOR -->
+
+  <section id="governador" class="race-card">
+
+    <div class="race-header">
+      <div>
+        <span class="local">MINAS GERAIS</span>
+        <h2>Governador</h2>
+      </div>
+
+      <div class="apuracao-box">
+        <span>Seções totalizadas</span>
+        <strong id="governador-apuracao">0,00%</strong>
+      </div>
+    </div>
+
+    <div class="progress">
+      <div id="governador-progress" class="progress-bar"></div>
+    </div>
+
+    <div id="governador-secoes" class="secoes">
+      0 de 0 seções
+    </div>
+
+    <div
+      id="governador-resumo"
+      class="resumo-votos">
+    </div>
+
+    <div
+      id="governador-candidatos"
+      class="lista-candidatos">
+      Carregando...
+    </div>
+
+    <div
+      id="governador-atualizacao"
+      class="ultima-atualizacao">
+    </div>
+
+  </section>
+
+
+  <!-- SENADO -->
+
+  <section id="senado" class="race-card">
+
+    <div class="race-header">
+      <div>
+        <span class="local">MINAS GERAIS</span>
+        <h2>Senado</h2>
+        <div class="observacao">
+          Duas vagas em disputa
+        </div>
+      </div>
+
+      <div class="apuracao-box">
+        <span>Seções totalizadas</span>
+        <strong id="senador-apuracao">0,00%</strong>
+      </div>
+    </div>
+
+    <div class="progress">
+      <div id="senador-progress" class="progress-bar"></div>
+    </div>
+
+    <div id="senador-secoes" class="secoes">
+      0 de 0 seções
+    </div>
+
+    <div
+      id="senador-resumo"
+      class="resumo-votos">
+    </div>
+
+    <div
+      id="senador-candidatos"
+      class="lista-candidatos">
+      Carregando...
+    </div>
+
+    <div class="nota">
+      Os percentuais exibidos são os informados oficialmente pelo TSE.
+    </div>
+
+    <div
+      id="senador-atualizacao"
+      class="ultima-atualizacao">
+    </div>
+
+  </section>
+
+
+  <!-- DEPUTADO FEDERAL -->
+
+  <section id="deputado" class="race-card">
+
+    <div class="race-header">
+      <div>
+        <span class="local">MINAS GERAIS</span>
+        <h2>Deputado Federal</h2>
+      </div>
+
+      <div class="apuracao-box">
+        <span>Seções totalizadas</span>
+        <strong id="deputado-apuracao">0,00%</strong>
+      </div>
+    </div>
+
+    <div class="progress">
+      <div id="deputado-progress" class="progress-bar"></div>
+    </div>
+
+    <div id="deputado-secoes" class="secoes">
+      0 de 0 seções
+    </div>
+
+    <div
+      id="deputado-resumo"
+      class="resumo-votos">
+    </div>
+
+
+    <div class="filtros">
+
+      <input
+        id="busca-deputado"
+        type="search"
+        placeholder="Buscar por nome, número ou partido"
+      >
+
+      <select id="limite-deputados">
+  <option value="20">Mostrar 20</option>
+  <option value="50" selected>Mostrar 50</option>
+  <option value="100">Mostrar 100</option>
+  <option value="9999">Mostrar todos</option>
+</select>
+
+    </div>
+
+
+    <div
+      id="deputado-candidatos"
+      class="lista-candidatos">
+      Carregando...
+    </div>
+
+    <div class="nota">
+      A eleição para deputado federal é proporcional. A posição na votação nominal, isoladamente, não define quem foi eleito.
+    </div>
+
+    <div
+      id="deputado-atualizacao"
+      class="ultima-atualizacao">
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+  Fonte: Tribunal Superior Eleitoral ·
+  Atualização automática a cada 10 segundos
+</footer>
+
+
+<script src="/app.js"></script>
+
+</body>
+</html>
